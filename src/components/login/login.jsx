@@ -108,18 +108,11 @@ const Login = ({ onLogin }) => {
         <div className="hero-content">
           <div className="visual-graphic">
              {/* Replace with your illustration from assets */}
-             <div className="mock-ui">
-                <div className="ui-circle google">G</div>
-                <div className="ui-circle slack">S</div>
-             </div>
+             
           </div>
-          <h2>Connect with every application.</h2>
-          <p>Everything you need in an easily customizable dashboard.</p>
-          <div className="dots">
-            <span className="dot active"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
-          </div>
+          <h2>Your gateway to global collaboration.</h2>
+          <p>Just visiting? Log in to make it official.</p>
+          
         </div>
       </div>
     </div>

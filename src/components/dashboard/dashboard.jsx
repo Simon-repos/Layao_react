@@ -1,82 +1,14 @@
 import React from 'react';
 import './dashboard.css';
-import { Home, Calendar as CalIcon, Mail, MessageSquare, User, Settings, LogOut, Bell, TrendingUp } from 'lucide-react';
+import { Home, User, Settings, LogOut } from 'lucide-react';
+import Sidebar from './Sidebar';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
       {/* Left Sidebar - Optimized Navigation Only */}
-      <nav className="sidebar">
-        {/* Brand/Logo */}
-        <div className="sidebar-brand">
-          <div className="brand-logo">L</div>
-          <div className="brand-name">Layao</div>
-        </div>
-
-        {/* Profile Section */}
-        <div className="profile-section">
-          <div className="profile-img">
-            <img src="https://via.placeholder.com/50" alt="Jane" />
-          </div>
-          <div className="profile-info">
-            <h4>Jane Doe</h4>
-            <p>Product Manager</p>
-          </div>
-        </div>
-
-        {/* Navigation Icons with Labels */}
-        <div className="nav-icons">
-          <div className="nav-item active">
-            <Home />
-            <span className="nav-label">Dashboard</span>
-          </div>
-          
-          <div className="nav-item">
-            <TrendingUp />
-            <span className="nav-label">Analytics</span>
-          </div>
-          
-          <div className="nav-item">
-            <CalIcon />
-            <span className="nav-label">Calendar</span>
-          </div>
-          
-          <div className="mail-wrapper nav-item">
-            <Mail />
-            <span className="nav-label">Messages</span>
-            <span className="nav-badge">3</span>
-          </div>
-          
-          <div className="nav-item">
-            <MessageSquare />
-            <span className="nav-label">Chat</span>
-            <span className="badge">+1</span>
-          </div>
-          
-          <div className="nav-item">
-            <User />
-            <span className="nav-label">Profile</span>
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="sidebar-footer">
-          <div className="nav-item">
-            <Bell />
-            <span className="nav-label">Notifications</span>
-          </div>
-          
-          <div className="nav-item">
-            <Settings />
-            <span className="nav-label">Settings</span>
-          </div>
-          
-          <div className="nav-item special">
-            <LogOut />
-            <span className="nav-label">Logout</span>
-          </div>
-        </div>
-      </nav>
+      <Sidebar />
 
       {/* Main Content Area - Unchanged */}
       <main className="main-content">
